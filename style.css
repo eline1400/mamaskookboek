@@ -1,0 +1,102 @@
+body {
+  background-color: rgb(231, 241, 240);
+  margin: 20px 100px 20px 100px;
+}
+
+
+/* tussenkopjes */
+.hr-lines {
+  display: flex;
+  flex-direction: row;
+}
+
+.hr-lines:before {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #000;
+  margin: 0px 10px 12px 0px;
+}
+
+.hr-lines:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #000000;
+  margin: 0px 0px 12px 10px;
+}
+
+/* recept blokken */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; 
+  justify-content:center;
+}
+
+img {
+  width: 400px;
+  height:250px
+}
+
+.text-box {
+  flex: 0 0 calc(33.33% - 10px); /* 33.33% voor 3 afbeeldingen per rij, met 10px marge */
+  background-color: rgb(231, 241, 240);
+  text-align: center;
+  cursor: pointer;
+  justify-content:center;
+}
+
+b:hover{
+  color: rgb(62, 150, 116);
+}
+
+
+/* Navigatiebalk */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 10px 0px 10px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0px 10px; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(231, 241, 240);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(29, 29, 29, 0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 5px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(62, 150, 116);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

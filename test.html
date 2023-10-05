@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; 
+            justify-content:center;
+        }
+
+        img {
+            width: 400px;
+            height:250px
+        }
+
+        .text-box {
+            flex: 0 0 calc(33.33% - 10px); /* 33.33% voor 3 afbeeldingen per rij, met 10px marge */
+            background-color: #ffffff;
+            text-align: center;
+            cursor: pointer;
+            justify-content:center;
+        }
+
+        b:hover{
+            color: rgb(20, 235, 188);
+        }
+
+        /* doorstrepen van de tekst */
+        .strikethrough {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="text-box" onclick="window.location.href='home.html'">
+            <img src="pictures/flammkuchen.png" alt="Afbeelding 1">
+            <br>
+            <b>Tekst onder Afbeelding 1</b>
+        </div>
+        <div class="text-box">
+            <img src="pictures/fusilli.png" alt="Afbeelding 2">
+            <br>
+            <b>Tekst onder Afbeelding 2</b>
+        </div>
+        <div class="text-box">
+            <img src="pictures/lasagna.png" alt="Afbeelding 3">
+            <br>
+            <b>Tekst onder Afbeelding 3</b>
+        </div> 
+    </div>
+
+    
+    <!-- doorstrepen van de tekst -->
+    <h2> test</h2>
+    <ul>
+        <li class="strikethrough">Klik hier om de tekst door te strepen in de opsomming.</li>
+        <li class="strikethrough">Een ander item dat kan worden doorstreept.</li>
+        <li class="strikethrough">test</li>
+    </ul>
+
+    <ol>
+        <li class="strikethrough">Klik hier om de tekst door te strepen in de opsomming.</li>
+        <li class="strikethrough">Een ander item dat kan worden doorstreept.</li>
+    </ol>
+
+    <script>
+        // JavaScript-code om door te strepen bij klikken
+        const listItems = document.querySelectorAll('.strikethrough');
+
+        listItems.forEach(item => {
+            item.addEventListener('click', function() {
+                if (item.classList.contains('strikethrough')) {
+                    item.classList.remove('strikethrough');
+                    item.style.textDecoration = 'line-through';
+                } else {
+                    item.classList.add('strikethrough');
+                    item.style.textDecoration = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
