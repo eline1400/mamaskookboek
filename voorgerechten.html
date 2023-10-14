@@ -9,14 +9,14 @@
 <h1>Mama's kookboek</h1>
 <hr>
 <div class="navbar">
-  <a href="home.html">Home</a>
+  <a href="/home.html">Home</a>
   <div class="dropdown">
     <button class="dropbtn">Voorgerechten 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="hoofdgerechten.html">recept 1</a>
-      <a href="#overig">meer voorgrechten</a>
+      <a href="#soepen">Soepen</a>
+      <a href="./voorgerechten.html">Alle voorgrechten</a>
     </div>
   </div>
   <div class="dropdown">
@@ -24,17 +24,20 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="hoofdgerechten/flammkuchen.html">flammkuchen</a>
-      <a href="hoofdgerechten.html">meer hoofdgerechten</a>
+      <a href="./hoofdgerechten.html#warme_pastas">Warme pasta's</a>
+      <a href="./hoofdgerechten.html#koude_pastas">Koude pasta's</a>
+      <a href="./hoofdgerechten.html#barbeque_specials">Barbeque specials</a>
+      <a href="./hoofdgerechten.html#overige_gerechten">Overige gerechten</a>
+      <a href="./hoofdgerechten.html">Alle hoofdgerechten</a>
     </div>
   </div> 
   <div class="dropdown">
-    <button class="dropbtn">Dessert 
+    <button class="dropbtn">Nagerechten
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">recept 1</a>
-      <a href="dessert.html">meer desserts</a>
+      <a href="./nagerechten.html#koude_nagerechten">Koude nagerechten</a>
+      <a href="./nagerechten.html">Alle nagerechten</a>
     </div>
   </div> 
 </div>
@@ -43,12 +46,23 @@
 
 <h2><center>Voorgerechten</center></h2>
 
-<div>
-  <center>
-  <a href="voorgerechten.html"><img src="pictures/voor.png" width="400" height="250"></a>
-  <a href="hoofdgerechten.html"><img src="pictures/hoofd.png" width="400" height="250"></a>
-  <a href="dessert.html"><img src="pictures/dessert.png" width="400" height="250"></a>
-  </center>
+<h2 id="soepen" class="hr-lines"><center>Soepen</center></h2>
+<div class="image-container">
+  <div class="text-box" onclick="window.location.href='recepten/lasagna.html'">
+      <img src="pictures/lasagna.png" alt="Afbeelding 1">
+      <br>
+      <b>Lasagna zonder pakjes</b>
+  </div>
+  <div class="text-box" onclick="window.location.href='recepten/pennen_zalm.html'">
+      <img src="pictures/pennen_zalm.png" alt="Afbeelding 2">
+      <br>
+      <b>Pennen met zalm</b>
+  </div>
+  <div class="text-box" onclick="window.location.href='recepten/spaghetti_bolognese.html'">
+      <img src="pictures/spaghetti_bolognese.png" alt="Afbeelding 3">
+      <br>
+      <b>Spaghetti bolognese</b>
+  </div> 
 </div>
 
 </body>

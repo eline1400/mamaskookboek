@@ -1,6 +1,6 @@
 body {
   background-color: rgb(231, 241, 240);
-  margin: 20px 100px 20px 100px;
+  margin: 20px 50px 20px 50px;
 }
 
 
@@ -43,6 +43,11 @@ img {
   text-align: center;
   cursor: pointer;
   justify-content:center;
+  transition: delay;
+}
+
+.text-box:hover {
+  transition: transform-functions; scale: 105%;
 }
 
 b:hover{
@@ -99,4 +104,33 @@ b:hover{
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+/* footer */
+/* footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgba(98, 182, 164, 0.39);
+  color: white;
+} */
+
+.footer-container {
+  background-color: rgba(98, 182, 164, 0.39); /* Optional */
+  display: grid;
+  grid-gap: 2rem; /* Optional */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1rem; /* Optional */
+}
+
+.column {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }

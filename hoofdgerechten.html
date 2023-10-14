@@ -11,14 +11,14 @@
 <h1>Mama's kookboek</h1>
 <hr>
 <div class="navbar">
-  <a href="home.html">Home</a>
+  <a href="/home.html">Home</a>
   <div class="dropdown">
     <button class="dropbtn">Voorgerechten 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#overig">recept 1</a>
-      <a href="#overig">meer voorgrechten</a>
+      <a href="./voorgerechten.html#soepen">Soepen</a>
+      <a href="/voorgerechten.html">Alle voorgrechten</a>
     </div>
   </div>
   <div class="dropdown">
@@ -26,29 +26,29 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="hoofdgerechten/flammkuchen.html">flammkuchen</a>
-      <a href="hoofdgerechten.html">meer hoofdgerechten</a>
+      <a href="#warme_pastas">Warme pasta's</a>
+      <a href="#koude_pastas">Koude pasta's</a>
+      <a href="#barbeque_specials">Barbeque specials</a>
+      <a href="#overige_gerechten">Overige gerechten</a>
+      <a href="./hoofdgerechten.html">Alle hoofdgerechten</a>
     </div>
   </div> 
   <div class="dropdown">
-    <button class="dropbtn">Dessert 
+    <button class="dropbtn">Nagerechten
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">recept 1</a>
-      <a href="dessert.html">meer desserts</a>
+      <a href="./nagerechten.html#koude_nagerechten">Koude nagerechten</a>
+      <a href="./nagerechten.html">Alle nagerechten</a>
     </div>
   </div> 
 </div>
 <br>
 <hr>
 
-<!-- <img class="banner" src="pictures/lasagna.png"> -->
-
-
 
 <h1 id="hoofdgerechten"><center>Hoofdgerechten</center></h1>
-<h2 class="hr-lines"><center>Warme pasta's</center></h2>
+<h2 id="warme_pastas" class="hr-lines"><center>Warme pasta's</center></h2>
 <div class="image-container">
   <div class="text-box" onclick="window.location.href='recepten/lasagna.html'">
       <img src="pictures/lasagna.png" alt="Afbeelding 1">
@@ -69,7 +69,7 @@
 
 
 
-<h2 class="hr-lines"><center>Koude pasta's</center></h2>
+<h2 id="koude_pastas" class="hr-lines"><center>Koude pasta's</center></h2>
 <div class="image-container">
   <div class="text-box" onclick="window.location.href='recepten/fusilli.html'">
       <img src="pictures/fusilli.png" alt="Afbeelding 1">
@@ -88,16 +88,48 @@
   </div> 
 </div>
 
-<h2 class="hr-lines"><center>Barbeque specials</center></h2>
+<h2 id="barbeque_specials" class="hr-lines"><center>Barbeque specials</center></h2>
 
 
-<h2 id="overig" class="hr-lines"><center>Overige gerechten</center></h2>
+<h2 id="overige_gerechten" class="hr-lines"><center>Overige gerechten</center></h2>
 <div>
   <center>
     <a href="recepten/flammkuchen.html"><img src="pictures/flammkuchen.png" width="400" height="250"></a>
   </center>
 </div>
 
+<br>
+<br>
+
+<!-- <footer>
+  <p>Author: Hege Refsnes<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer> -->
+
+<footer class="footer">
+  <div class="row footer-container">
+    <div class="column">
+      <a href="/voorgerechten.html"><strong>Alle voorgerechten</strong></a><br>
+      <a href="./voorgerechten.html#soepen">soepen</a>
+    </div>
+    <div class="column">
+      <a href="/hoofdgerechten.html"><strong>Alle hoofdgerechten</strong></a><br>
+      <a href="#warme_pastas">Warme pasta's</a><br>
+      <a href="#koude_pastas">Koude pasta's</a><br>
+      <a href="#barbeque_specials">Barbeque specials</a><br>
+      <a href="#overige_gerechten">Overige gerechten</a>
+    </div>
+    <div class="column">
+      <a href="./nagerechten.html"><strong>Alle nagerechten</strong></a><br>
+      <a href="./nagerechten.html#koude_nagerechten">Koude nagerechten</a>
+    </div>
+    <div class="column">
+      <a href="/voorgerechten.html">over mamas kookboek</a><br>
+      <a href="./voorgerechten.html#soepen">contact</a><br>
+      <a href="./voorgerechten.html#soepen">socials</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
